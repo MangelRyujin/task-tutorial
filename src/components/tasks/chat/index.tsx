@@ -16,7 +16,6 @@ export default function TasksChat({ onCreate }: ChatProps) {
       alert("Your browser does not support speech recognition");
       return;
     }
-
     const SpeechRecognition =
       (window as any).SpeechRecognition ||
       (window as any).webkitSpeechRecognition;
@@ -31,6 +30,7 @@ export default function TasksChat({ onCreate }: ChatProps) {
 
       // Send the recognized text to the backend or process it as a task
       onSendAudioMessage(transcript);
+      setRecording(false);
     };
 
     recognitionRef.current.onend = () => {
