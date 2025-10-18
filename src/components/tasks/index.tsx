@@ -35,9 +35,9 @@ export default function TasksSection() {
   return (
     <>
       {loading ? (
-        <p className="text-center text-gray-500">Cargando tareas...</p>
+        <p className="text-center text-gray-500">Loading tasks...</p>
       ) : tasks.length == 0 ? (
-        <p className="text-center text-gray-500">Sin lista de tareas</p>
+        <p className="text-center text-gray-500">You don't have tasks</p>
       ) : (
         <TasksList tasks={tasks} onDelete={handelDelete} />
       )}

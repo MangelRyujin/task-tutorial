@@ -1,6 +1,17 @@
 import { Task } from "../types";
 
+
 const STORAGE_KEY = "tasks";
+
+function formatDate(date: Date) {
+  return date.toLocaleString("es-PE", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
 
 function readTasks() {
   const data = localStorage.getItem(STORAGE_KEY);
@@ -27,7 +38,7 @@ export async function createTask(title: string) {
   const newTask = {
     id: crypto.randomUUID(),
     title,
-    created_at: new Date().toISOString(),
+    created_at: formatDate(new Date()),
   };
   tasks.push(newTask);
   writeTasks(tasks);

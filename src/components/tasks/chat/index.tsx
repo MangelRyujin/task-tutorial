@@ -71,6 +71,7 @@ export default function TasksChat({ onCreate }: ChatProps) {
           onChange={(e) => onChangeInputText(e.target.value || "")}
           title="Message"
           radius="full"
+          size="lg"
           placeholder="Write your task"
         />
         <Button
@@ -79,8 +80,9 @@ export default function TasksChat({ onCreate }: ChatProps) {
           isIconOnly
           isDisabled={!text}
           radius="full"
+          size="lg"
           color="primary"
-          variant="flat"
+          variant="shadow"
         >
           <IoIosSend size={20} />
         </Button>
@@ -89,8 +91,9 @@ export default function TasksChat({ onCreate }: ChatProps) {
         isIconOnly
         onClick={recording ? stopRecording : startRecording}
         radius="full"
+        size="lg"
         color={recording ? "danger" : "primary"}
-        variant={recording ? "shadow" : "flat"}
+        variant="shadow"
       >
         <AiFillAudio size={20} />
       </Button>
