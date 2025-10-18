@@ -9,7 +9,6 @@ export default function TasksList({tasks, onDelete}:TasksListProps){
             {tasks?.map((task,index)=>(
                 <Alert
                 key={index}
-                color="primary"
                 description={task.created_at}
                 endContent={
                 <Button onClick={()=> {onDelete(task.id)}} color="danger" size="sm" isIconOnly variant="flat">
