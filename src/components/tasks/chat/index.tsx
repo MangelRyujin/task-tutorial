@@ -72,6 +72,8 @@ export default function TasksChat({ onCreate }: ChatProps) {
           title="Message"
           radius="full"
           size="lg"
+          color="primary"
+          variant="flat"
           placeholder="Write your task"
         />
         <Button
