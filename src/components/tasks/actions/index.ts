@@ -12,7 +12,6 @@ function writeTasks(tasks: Task[]) {
 }
 
 export async function getAllTasks() {
-  // simulamos comportamiento async
   return Promise.resolve(readTasks());
 }
 

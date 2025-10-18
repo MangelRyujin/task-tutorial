@@ -3,7 +3,7 @@ import { Input } from "@heroui/input";
 import { IoIosSend } from "react-icons/io";
 import { AiFillAudio } from "react-icons/ai";
 import { useRef, useState } from "react";
-import { ChatProps } from "./types";
+import { ChatProps } from "../types";
 import { Form } from "@heroui/react";
 
 export default function TasksChat({ onCreate }: ChatProps) {
