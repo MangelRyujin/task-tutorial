@@ -19,7 +19,7 @@ export const Navbar = () => {
             href="/"
           >
             <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <p className="font-bold text-inherit">Task Manager</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>

@@ -20,7 +20,6 @@ export default function TasksList({tasks, onDelete}:TasksListProps){
                 variant="faded"
             />
             ))}
-            
         </div>
     )
 }
